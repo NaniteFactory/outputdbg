@@ -9,6 +9,6 @@ import (
 
 // LogPrintln println()s its args to both your console & debug view.
 func LogPrintln(args ...interface{}) {
-	outputdebug.String(fmt.Sprint(args...))
+	outputdebug.String(fmt.Sprintln(args...))
 	log.Println(args...)
 }
